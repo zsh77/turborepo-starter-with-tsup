@@ -1,6 +1,6 @@
-import * as React from "react";
+import type { AnchorHTMLAttributes } from "react";
 
-interface LinkProps extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
+interface LinkProps extends AnchorHTMLAttributes<HTMLAnchorElement> {
   children: React.ReactNode;
   newTab?: boolean;
   href: string;
