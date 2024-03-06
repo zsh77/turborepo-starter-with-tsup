@@ -3,6 +3,9 @@
   "version": "0.0.0",
   "private": true,
   "exports": {
+    "./*": {
+      "types": "./dist/*/index.d.ts"
+    },
     "./logger": "./dist/logger/index.js",
     "./classJoin": "./dist/classJoin/index.js"
   },

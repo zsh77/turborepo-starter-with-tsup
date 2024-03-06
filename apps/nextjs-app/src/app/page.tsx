@@ -1,3 +1,4 @@
+import { Button } from "@repo/ui/Button";
 import { CounterButton } from "@repo/ui/CounterButton";
 import { Link } from "@repo/ui/Link";
 import { log } from "@repo/utils/logger";
@@ -23,6 +24,7 @@ export default function Store(): JSX.Element {
           Next.js
         </Link>
       </p>
+      <Button>aaa</Button>
     </div>
   );
 }

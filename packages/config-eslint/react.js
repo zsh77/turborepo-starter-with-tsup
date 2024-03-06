@@ -32,8 +32,24 @@ module.exports = {
     },
   },
   ignorePatterns: ["node_modules/", "dist/", ".eslintrc.js", "**/*.css"],
-  // add rules configurations here
   rules: {
     "import/no-default-export": "off",
+    "react/button-has-type": "off",
+    "@typescript-eslint/naming-convention": [
+      "error",
+      {
+        selector: "interface",
+        format: ["PascalCase"],
+        prefix: ["I"],
+      },
+    ],
   },
+  overrides: [
+    {
+      files: ["./postcsc.config.js"],
+      env: {
+        node: true,
+      },
+    },
+  ],
 };

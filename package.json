@@ -1,8 +1,10 @@
 {
+  "name": "turborepo-starter-with-tsup",
+  "description": "This is a minified version of an official example of turborepo which uses tsup in its packages and has next.js and vite apps.",
   "private": true,
   "scripts": {
     "build": "turbo run build",
-    "clean": "turbo run clean",
+    "clean": "turbo run clean && rm -rf node_modules .turbo",
     "dev": "turbo run dev",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "lint": "turbo run lint",

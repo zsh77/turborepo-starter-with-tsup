@@ -4,7 +4,8 @@ export default defineConfig((options: Options) => ({
   entry: ["./src/*/index.tsx"],
   format: ["cjs", "esm"],
   dts: true,
-  external: ["react"],
+  clean: false,
+  external: ["react", "@repo/utils"],
   banner: {
     js: "'use client'",
   },
