@@ -1,6 +1,6 @@
 import type { AnchorHTMLAttributes } from "react";
 
-interface LinkProps extends AnchorHTMLAttributes<HTMLAnchorElement> {
+interface ILinkProps extends AnchorHTMLAttributes<HTMLAnchorElement> {
   children: React.ReactNode;
   newTab?: boolean;
   href: string;
@@ -11,7 +11,7 @@ export function Link({
   href,
   newTab,
   ...other
-}: LinkProps): JSX.Element {
+}: ILinkProps): JSX.Element {
   return (
     <a
       href={href}

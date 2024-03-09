@@ -17,7 +17,7 @@
     "clean": "rm -rf dist .turbo",
     "dev": "tsup --watch",
     "typecheck": "tsc --noEmit",
-    "lint": "eslint src/",
+    "lint": "eslint .",
     "test": "jest"
   },
   "jest": {

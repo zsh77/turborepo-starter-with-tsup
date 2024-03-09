@@ -15,7 +15,7 @@ This Turborepo includes the following packages and apps:
 - `@repo/eslint-config`: eslint configurations used throughout the monorepo
 - `@repo/jest-presets`: Jest configurations and scripts
 - `@repo/typescript-config`: tsconfig.json's used throughout the monorepo
-- `@repo/ui`: a React UI library (which contains `<CounterButton>` and `<Link>` component)
+- `@repo/ui`: a React UI library bundled with `tsup`
 - `@repo/utils`: isomorphic logger (a small wrapper around console.log)
 
 Each package and app is 100% [TypeScript](https://www.typescriptlang.org/).

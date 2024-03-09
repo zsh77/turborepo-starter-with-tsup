@@ -1,5 +1,3 @@
-"use client";
-
 import { type ReactNode, type ButtonHTMLAttributes } from "react";
 import { classJoin } from "@repo/utils/classJoin";
 

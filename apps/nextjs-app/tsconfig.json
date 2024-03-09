@@ -7,7 +7,9 @@
       {
         "name": "next"
       }
-    ]
+    ],
+    "baseUrl": ".",
+    "paths": { "@nextjs-app/modules/*": ["./src/app/_modules/*"] }
   },
   "include": ["src", "next.config.js", "next-env.d.ts", ".next/types/**/*.ts"]
 }
