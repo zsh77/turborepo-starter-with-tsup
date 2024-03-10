@@ -16,7 +16,7 @@ This Turborepo includes the following packages and apps:
 - `@repo/jest-presets`: Jest configurations and scripts
 - `@repo/typescript-config`: tsconfig.json's used throughout the monorepo
 - `@repo/ui`: a React UI library bundled with `tsup`
-- `@repo/utils`: isomorphic logger (a small wrapper around console.log)
+- `@repo/utils`: a Typescript library of tools bundled with `tsup`
 
 Each package and app is 100% [TypeScript](https://www.typescriptlang.org/).
 
