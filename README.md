@@ -15,6 +15,7 @@ This Turborepo includes the following packages and apps:
 - `@repo/eslint-config`: eslint configurations used throughout the monorepo
 - `@repo/jest-presets`: Jest configurations and scripts
 - `@repo/typescript-config`: tsconfig.json's used throughout the monorepo
+- `@repo/tailwind-config`: a reusable tailwind config
 - `@repo/ui`: a React UI library bundled with `tsup`
 - `@repo/utils`: a Typescript library of tools bundled with `tsup`
 
