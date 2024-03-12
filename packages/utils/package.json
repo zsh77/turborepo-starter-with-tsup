@@ -14,7 +14,8 @@
     "watch": "tsup --watch",
     "lint": "eslint src/",
     "typecheck": "tsc --noEmit",
-    "test": "jest"
+    "test": "jest",
+    "clean": "rm -rf dist .turbo node_modules"
   },
   "jest": {
     "preset": "@repo/jest-presets/node"

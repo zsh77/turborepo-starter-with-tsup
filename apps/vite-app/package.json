@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "build": "vite build",
-    "clean": "rm -rf dist",
+    "clean": "rm -rf dist node_modules .turbo",
     "dev": "vite --host 0.0.0.0 --port 3001 --clearScreen false",
     "typecheck": "tsc --noEmit",
     "lint": "eslint . --ext ts,tsx"

@@ -1,7 +1,10 @@
+import type{ReactNode} from "react";
+import "@repo/ui/styles.css";
+
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode;
+  children: ReactNode;
 }): JSX.Element {
   return (
     <html lang="en">

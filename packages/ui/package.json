@@ -5,6 +5,7 @@
   "license": "MIT",
   "sideEffects": false,
   "exports": {
+    "./styles.css": "./dist/styles.css",
     "./*": {
       "types": "./dist/*/index.d.ts"
     },
@@ -13,9 +14,9 @@
     "./Link": "./dist/Link/index.js"
   },
   "scripts": {
-    "build": "tsup",
-    "clean": "rm -rf dist .turbo",
-    "dev": "tsup --watch",
+    "build": "tsup && tailwindcss -i ./src/styles.css -o ./dist/styles.css",
+    "clean": "rm -rf dist .turbo node_modules",
+    "dev": "tsup --watch --onSuccess 'tailwindcss -i ./src/styles.css -o ./dist/styles.css'",
     "typecheck": "tsc --noEmit",
     "lint": "eslint .",
     "test": "jest"
@@ -23,14 +24,12 @@
   "jest": {
     "preset": "@repo/jest-presets/browser"
   },
-  "dependencies": {
-    "@repo/utils": "workspace:*"
-  },
   "devDependencies": {
     "@repo/eslint-config": "workspace:*",
     "@repo/jest-presets": "workspace:*",
     "@repo/tailwind-config": "workspace:*",
     "@repo/typescript-config": "workspace:*",
+    "@repo/utils": "workspace:*",
     "@types/jest": "^29.5.12",
     "@types/node": "^20.11.24",
     "@types/react": "^18.2.62",
