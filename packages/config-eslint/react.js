@@ -8,6 +8,7 @@ module.exports = {
     "plugin:@typescript-eslint/recommended",
     "eslint-config-turbo",
   ],
+  parser: "@typescript-eslint/parser",
   parserOptions: {
     project,
   },
@@ -25,14 +26,6 @@ module.exports = {
   ignorePatterns: ["node_modules/", "dist/", ".eslintrc.*", "**/*.css"],
   rules: {
     "import/no-default-export": "off",
-    // "@typescript-eslint/naming-convention": [
-    //   "error",
-    //   {
-    //     selector: "interface",
-    //     format: ["PascalCase"],
-    //     prefix: ["I"],
-    //   },
-    // ],
   },
   overrides: [
     {

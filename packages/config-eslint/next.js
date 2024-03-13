@@ -4,6 +4,7 @@ const project = resolve(process.cwd(), "tsconfig.json");
 
 module.exports = {
   extends: ["eslint-config-turbo", "next/core-web-vitals"],
+  parser: "@typescript-eslint/parser",
   parserOptions: {
     project,
   },
