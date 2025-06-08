@@ -6,12 +6,21 @@
   "sideEffects": false,
   "exports": {
     "./styles.css": "./dist/styles.css",
-    "./*": {
-      "types": "./dist/*/index.d.ts"
+    "./Button": {
+      "types": "./dist/Button/index.d.ts",
+      "import": "./dist/Button/index.mjs",
+      "require": "./dist/Button/index.js"
     },
-    "./Button": "./dist/Button/index.js",
-    "./CounterButton": "./dist/CounterButton/index.js",
-    "./Link": "./dist/Link/index.js"
+    "./CounterButton": {
+      "types": "./dist/CounterButton/index.d.ts",
+      "import": "./dist/CounterButton/index.mjs",
+      "require": "./dist/CounterButton/index.js"
+    },
+    "./Link": {
+      "types": "./dist/Link/index.d.ts",
+      "import": "./dist/Link/index.mjs",
+      "require": "./dist/Link/index.js"
+    }
   },
   "scripts": {
     "build": "tsup && tailwindcss -i ./src/styles.css -o ./dist/styles.css",
